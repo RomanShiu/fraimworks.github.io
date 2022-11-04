@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parsing</title>
+	<link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.8.1.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="navigation" class="p-navigation" style="background-color: darkgray;">
+		<div class="p-strip--darkgray">
+			<div class="p-navigation__row">
+	    <div class="p-navigation__banner">
+	      <div class="p-navigation__tagged-logo">
+	        <a class="p-navigation__link" href="index.html">
+	          <div class="p-navigation__logo-tag">
+	          </div>
+	          <span class="p-navigation__logo-title" id="el1">Парсинг и защита от него</span>
+	        </a>
+	      </div>
+	    </div>
+
+	    <nav class="p-navigation__nav" aria-label="Example main">
+	      <ul class="p-navigation__items">
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="index.html">Парсинг это..</a>
+	        </li>
+	        <li class="p-navigation__item is-selected">
+	          <a class="p-navigation__link" href="blockpars.html">Защита от парсинга</a>
+	        </li>
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="capcha.html">Capcha</a>
+	        </li>
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="lovu.html">Ловушка для ботов</a>
+	        </li>
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="ip.html">Анализ свойств IP-адреса</a>
+	        </li>
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="spblock.html">Сервисы для защиты сайта</a>
+	        </li>
+	      </ul>
+	    </nav>
+	  </div>
+		</div>
+	</header>
+	<table>
+		<tr>
+			<td style=" width: 80%;">
+				<div class="page-info">
+					<p>
+						<h3>Какие еще есть способы защиты от парсинга?</h3>
+							На большинстве сайтов размещается страница с Правилами использования сайта/Terms of use. В данном документе можно написать о запрете на копирование данных с сайта. Но правовой статус такого заявления не ясен.
+							<div class="right" style=" width: 40%;">
+                <figure>
+                    <img src="https://spark.ru/upload/other/b_606f35837d034.jpg" alt="" > 
+                </figure>
+              </div>
+							Дополнительные способы защиты:
+							<ul class="p-list--divided--nested-counter">
+  							<li class="p-list__item">Блокировка IP-адреса по списку или на основе таких критериев, как геолокация и/или черного списка DNS. Это также заблокирует весь просмотр с этого адреса;</li>
+								<li class="p-list__item">Блокировка по значению, указанному в строке user agent;</li>
+								<li class="p-list__item">Блокировка по значению, указанному в PTR записи;</li>
+								<li class="p-list__item">Парсеры могут быть заблокированы путем анализа клиента на получение избыточного трафика;</li>
+								<li class="p-list__item">Использование файла robots;</li>
+								<li class="p-list__item">Система анализа поведения пользователя для вычисления роботов с использованием таких данных: движение курсора, координаты нажатия на кнопки и прочее;</li>
+								<li class="p-list__item">Обфусцирование стилей;</li>
+								<li class="p-list__item">Динамическое изменение имен классов и кода сайта, без изменения результата для пользователя. Например, изменение стилей и верстки страницы.</li>
+							</ul>
+							Еще есть вариант использовать черные списки DNS, называемые еще как Domain Name System-based Blackhole List (DNSBL) или DNS Real-time Blackhole List (DNSRBL).
+							<div class="video">
+								<figure>
+									<iframe style="width: 100%; height: 50vw;" src="https://www.youtube.com/embed/jFdq7BSlDj0" title="Публичное собеседование: Python-программист [Хекслет]"></iframe>
+								</figure>
+							</div>
+					</p>						
+				</div>
+
+				<nav class="p-pagination" aria-label="Pagination" style="margin-left: 30%;">
+				  <ol class="p-pagination__items">
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link--previous" href="index.html" title="Previous page"><i class="p-icon--chevron-down">Previous page</i></a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="index.html" aria-label="Page 1">1</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link is-active" aria-current="page" href="blockpars.html" aria-label="Page 2">2</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="capcha.html" aria-label="Page 3">3</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="lovu.html" aria-label="Page 4">4</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="ip.html" aria-label="Page 5">5</a>
+				    </li>
+				     <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="spblock.html" aria-label="Page 6">6</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link--next" href="capcha.html" title="Next page"><i class="p-icon--chevron-down">Next page</i></a>
+				    </li>
+				  </ol>
+				</nav>
+			</td>
+			<td style="background-color: #d4d4d4;">
+				<style>
+					span.news2world_date	{font-size: 85%; margin-right:0.5em;}
+					div.news2world_informer	{font-size: 85%; margin-bottom: 0.3em;}
+					div.news2world_title 	{font-size: 100%; margin-bottom: 0.5em; } 
+					div.news2world_allnews	{font-size: 80%; margin-top: 0.3em;clear: both} 
+					div.news2world_annotation {font-size: 85%; margin-bottom: 0.5em;} 
+					img.news2world_img {float:left;border:0;margin: 7px 7px 7px 0;width:75px;height:50px;} 
+					div.news2world {clear: both}
+				</style>
+					<div class="news2world_title"><a href="https://news2world.net/"><b>Новости</b></a></div>
+					<script type="text/javascript">
+					var news2world_col=5;
+					var news2world_cut='→';
+					</script>
+					<script type="text/javascript" src="https://news2world.net/informer/2.utf.js"></script>
+			</td>
+		</tr>
+	</table>
+
+	 <a href="#el1" style="color: black; text-decoration: none;"><footer class="l-footer--sticky p-strip--light" style="background-color: #e0e0e0; margin-top: 0;">
+    <nav class="row" aria-label="Footer">
+      <div class="has-cookie">
+       <p>© 2022 СЛИ. Парсинг и защита от него</p>
+      </div>
+  </footer></a>
+</body>
+</html>

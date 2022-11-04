@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parsing</title>
+	<link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.8.1.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="navigation" class="p-navigation" style="background-color: darkgray;">
+		<div class="p-strip--darkgray">
+			<div class="p-navigation__row">
+	    <div class="p-navigation__banner">
+	      <div class="p-navigation__tagged-logo">
+	        <a class="p-navigation__link" href="index.html">
+	          <div class="p-navigation__logo-tag">
+	          </div>
+	          <span class="p-navigation__logo-title" id="el1">Парсинг и защита от него</span>
+	        </a>
+	      </div>
+	    </div>
+
+	    <nav class="p-navigation__nav" aria-label="Example main">
+	      <ul class="p-navigation__items">
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="index.html">Парсинг это..</a>
+	        </li>
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="blockpars.html">Защита от парсинга</a>
+	        </li>
+	        <li class="p-navigation__item is-selected">
+	          <a class="p-navigation__link" href="capcha.html">Capcha</a>
+	        </li>
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="lovu.html">Ловушка для ботов</a>
+	        </li>
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="ip.html">Анализ свойств IP-адреса</a>
+	        </li>
+	        <li class="p-navigation__item">
+	          <a class="p-navigation__link" href="spblock.html">Сервисы для защиты сайта</a>
+	        </li>
+	      </ul>
+	    </nav>
+	  </div>
+		</div>
+	</header>
+	<table>
+		<tr>
+			<td style=" width: 80%;">
+				<div class="page-info">
+					<p>
+						<h3>Капча..</h3>
+						С целью ограничения доступа к сайту можно использовать капчи. Главным недостатком данного способа считались неудобства, которые создавалиcь для реальных пользователей. Например, была необходимость ввода текста с картинки или разгадывание графики.
+						<div style=" width: 80%; margin: auto;">
+              <figure>
+                <img src="https://ru.megaindex.com/blog/files/images/stop-bots-google-captcha.jpg" alt="" > 
+              </figure>
+             </div>
+            Google придумал как решить проблему с такими неудобствами. Решение заключается в анализе данных об активности пользователей.
+
+						Если обладать данными о трафике, то проверку можно проводить в фоновом режиме, без участия пользователя.
+						<div style=" width: 80%; margin: auto;">
+              <figure>
+                <img src="https://ru.megaindex.com/blog/files/images/stop-bots-captcha.jpg" alt="" > 
+              </figure>
+            </div>
+            Итак, сейчас в сервисах Google используется новое решение по защите от ботов. Подобное решение доступно для всех пользователей.
+
+						reCAPTCHA является бесплатным сервисом, который позволяет защитить сайт от парсинга и спама.
+						<div style=" width: 80%; margin: auto;">
+              <figure>
+                <img src="https://ru.megaindex.com/blog/files/images/stop-bots-scoring.jpg" alt="" > 
+              </figure>
+            </div>
+            Примеры значений:
+            <ul class="p-list--divided--nested-counter">
+  							<li class="p-list__item">0.9. Означает, что клиент с высокой вероятностью является пользователем. При таких значениях никаких дополнительных проверок и ограничений на использование сайта создавать не следует;</li>
+								<li class="p-list__item">0.3. Означает, что клиент скорее пользователь, нежели робот. Для клиентов с такими значениями имеет смысл иногда проводить дополнительную проверку. Например, проверку можно проводить во время подозрительной активности или при пиковой нагрузке на сервер сайта;</li>
+								<li class="p-list__item">0.1. Означает, что клиент скорее робот, нежели пользователь.</li>
+						</ul>
+						После прохождения дополнительных проверок следует использовать cookies для сохранения результатов, иначе пользователям придется часто проходить проверки, что является не здравому смыслу.
+
+						Итак, на практике использование сервиса reCAPTCHA помогает убедиться в том, что посетитель сайта является реальным человеком.
+
+						Но при использовании мотивированного трафика проверку капчами можно обходить в реальном времени.
+
+						Например, такие сервисы как 2Captcha и ruCAPTCHA помогает обходить любые типы капч.
+					</p>						
+				</div>
+
+				<nav class="p-pagination" aria-label="Pagination" style="margin-left: 30%;">
+				  <ol class="p-pagination__items">
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link--previous" href="blockpars.html" title="Previous page"><i class="p-icon--chevron-down">Previous page</i></a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="index.html" aria-label="Page 1">1</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="blockpars.html" aria-label="Page 2">2</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link is-active" href="capcha.html"  aria-current="page" aria-label="Page 3">3</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="lovu.html" aria-label="Page 4">4</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="ip.html" aria-label="Page 5">5</a>
+				    </li>
+				     <li class="p-pagination__item">
+				      <a class="p-pagination__link" href="spblock.html" aria-label="Page 6">6</a>
+				    </li>
+				    <li class="p-pagination__item">
+				      <a class="p-pagination__link--next" href="lovu.html" title="Next page"><i class="p-icon--chevron-down">Next page</i></a>
+				    </li>
+				  </ol>
+				</nav>
+			</td>
+			<td style="background-color: #d4d4d4;">
+				<style>
+					span.news2world_date	{font-size: 85%; margin-right:0.5em;}
+					div.news2world_informer	{font-size: 85%; margin-bottom: 0.3em;}
+					div.news2world_title 	{font-size: 100%; margin-bottom: 0.5em; } 
+					div.news2world_allnews	{font-size: 80%; margin-top: 0.3em;clear: both} 
+					div.news2world_annotation {font-size: 85%; margin-bottom: 0.5em;} 
+					img.news2world_img {float:left;border:0;margin: 7px 7px 7px 0;width:75px;height:50px;} 
+					div.news2world {clear: both}
+				</style>
+					<div class="news2world_title"><a href="https://news2world.net/"><b>Новости</b></a></div>
+					<script type="text/javascript">
+					var news2world_col=5;
+					var news2world_cut='→';
+					</script>
+					<script type="text/javascript" src="https://news2world.net/informer/2.utf.js"></script>
+			</td>
+		</tr>
+	</table>
+
+	 <a href="#el1" style="color: black; text-decoration: none;"><footer class="l-footer--sticky p-strip--light" style="background-color: #e0e0e0; margin-top: 0;">
+    <nav class="row" aria-label="Footer">
+      <div class="has-cookie">
+       <p>© 2022 СЛИ. Парсинг и защита от него</p>
+      </div>
+  </footer></a>
+</body>
+</html>
